@@ -3,6 +3,7 @@
 ?>
 <link rel="stylesheet" href="style.css" />
 <form action='rca.php' method='post'>
+<div class='center3'><img src="logo.png" alt="logo" width="200" height="80"></div>
 <div id='wrap'>
     <fieldset>
 
@@ -14,6 +15,19 @@
             <p><label>Circuit name</label><br><input type='text' name='circuit name' value=''></p>
 
             <p><label>Ticket number</label><br><input type='text' name='ticket number' value=''></p>
+
+            <label for="start">Start date:</label>
+
+                <input type="date" id="start" name="trip-start"
+                        value="2020-07-22"
+                        min="2020-01-01" max="2025-12-31">
+
+            <label for="end">End date:</label>
+
+                <input type="date" id="end" name="trip-end"
+                        value="2020-07-22"
+                        min="2020-01-01" max="2025-12-31">
+
 
         </div>
         <div class='col'>

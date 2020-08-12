@@ -10,6 +10,8 @@ if(isset($_POST['submit'])){
     $outage = $_POST['outage'];
     $solution = $_POST['solution'];
     $prevention = $_POST['prevention'];
+    $start_date= $_POST ['trip-start'];
+    $end_date= $_POST ['trip-end'];
 
     //check client name is set
     if($client_name ==''){
@@ -36,6 +38,16 @@ if(isset($_POST['submit'])){
     if($prevention ==''){
         $error[] = 'What is being done to prevent recurrence is required';
     }
+
+    //check client name is set
+    if($start_date ==''){
+        $error[] = 'Startdate is required';
+    }
+
+    //check client name is set
+    if($end_date ==''){
+        $error[] = 'End date is required';
+    }
    
     //if no errors carry on
     if(!isset($error)){
@@ -50,13 +62,20 @@ if(isset($_POST['submit'])){
             <h1>ROOT CAUSE ANALYSIS</h1>
         </div>
 
+        <p>Problem: <?php echo $problem;?></p>
+        
+        <p>Incident Reported Time: <?php echo $start_date;?></p>
+        
         <p>Client Name: <?php echo $client_name;?></p>
-        <br></br>
+        
         <p>Circuit Name: <?php echo $circuit_name;?></p>
-        <br></br>
+        
         <p>Ticket Number: <?php echo $ticket_number;?></p>
-        <br></br>
-        <br></br>
+       
+        <p>Start Time: <?php echo $start_date;?></p>
+
+        <p>End Time: <?php echo $end_date;?></p>
+
         <div class='center2'><h2>OUTAGE REPORT </h2></div>
 
         <br>What happened: <br> <p><?php echo $outage;?></p>
@@ -66,7 +85,12 @@ if(isset($_POST['submit'])){
         <br>What's being done to prevent recurrence?:</br> <p> <?php echo $prevention;?></p>
 
 
-        
+        <footer>
+
+            <p>this file was created by bamisere<br>
+            <a href="mailto:noc@broadbased.net">noc@broadbased.net</a></p>
+
+        </footer>
 
         <?php 
         $body = ob_get_clean();
@@ -85,7 +109,7 @@ if(isset($_POST['submit'])){
         
         
         //output pdf
-        $mpdf->Output('demo.pdf','D');
+        $mpdf->Output($client_name._.$circuit_name._.'RCA.pdf','D');
 
         //save to server
         //$mpdf->Output("mydata.pdf",'F');
