@@ -10,11 +10,11 @@
         <legend>RCA GENERATOR</legend>
         <div class='col'>
 
-            <p><label>Client name</label><br><input type='text' name='client name' value=''></p> 
+            <p><label>Client name</label><br><input type='text' name='client name' value=''required></p> 
 
-            <p><label>Circuit name</label><br><input type='text' name='circuit name' value=''></p>
+            <p><label>Circuit name</label><br><input type='text' name='circuit name' value=''required></p>
 
-            <p><label>Ticket number</label><br><input type='text' name='ticket number' value=''></p>
+            <p><label>Ticket number</label><br><input type='text' name='ticket number' value='' required></p>
 
             <label for="start">Start date:</label>
 
