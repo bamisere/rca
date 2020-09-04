@@ -20,13 +20,13 @@
 
                  <input type="datetime-local" id="start"
                   name="trip-start" value="2020-06-12T19:30"
-                    min="2020-06-07T00:00" max="2025-06-14T00:00">
+                    min="2020-01-07T00:00" max="2025-06-14T00:00">
 
             <label for="end">End date:</label>
 
                 <input type="datetime-local" id="end"
                   name="trip-end" value="2020-06-12T19:30"
-                    min="2020-06-07T00:00" max="2025-12-14T00:00">
+                    min="2020-01-07T00:00" max="2025-12-14T00:00">
 
              
 
