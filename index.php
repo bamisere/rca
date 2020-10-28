@@ -42,6 +42,7 @@
                     <option>FIBER CUT</option>
                     <option>LOS ON DEVICE</option>
                     <option>LINK FLAP</option>
+                    <option>FROZEN NODE</option>
 
                 </select>
 
