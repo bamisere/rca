@@ -62,27 +62,27 @@ if(isset($_POST['submit'])){
             <h1>ROOT CAUSE ANALYSIS</h1>
         </div>
 
-        <p>Problem: <?php echo $problem;?></p>
+        <p><strong> Problem: </strong> <?php echo $problem;?></p>
         
-        <p>Incident Reported Time: <?php echo $start_date;?></p>
+        <p><strong> Incident Reported Time: </strong> <?php echo $start_date;?></p>
         
-        <p>Client Name: <?php echo $client_name;?></p>
+        <p><strong> Client Name:</strong> <?php echo $client_name;?></p>
         
-        <p>Circuit Name: <?php echo $circuit_name;?></p>
+        <p> <strong> Circuit Name:</strong> <?php echo $circuit_name;?></p>
         
-        <p>Ticket Number: <?php echo $ticket_number;?></p>
+        <p><strong>Ticket Number:</strong> <?php echo $ticket_number;?></p>
        
-        <p>Start Time: <?php echo $start_date;?></p>
+        <p><strong>Start Time:</strong> <?php echo $start_date;?></p>
 
-        <p>End Time: <?php echo $end_date;?></p>
+        <p><strong>End Time:</strong> <?php echo $end_date;?></p>
 
         <div class='center2'><h2>OUTAGE REPORT </h2></div>
 
-        <br>What happened: <br> <p><?php echo $outage;?></p>
+        <br> <strong>What happened:</strong> <br> <p><?php echo $outage;?></p>
         
-        <br>What was done to correct the problem?:</br> <p> <?php echo $solution;?></p>
+        <br><strong> What was done to correct the problem?:</strong></br> <p> <?php echo $solution;?></p>
 
-        <br>What's being done to prevent recurrence?:</br> <p> <?php echo $prevention;?></p>
+        <br> <strong>What's being done to prevent recurrence?:</strong></br> <p> <?php echo $prevention;?></p>
 
 
         <footer>
