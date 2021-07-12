@@ -43,6 +43,11 @@
                     <option>LOS ON DEVICE</option>
                     <option>LINK FLAP</option>
                     <option>FROZEN NODE</option>
+                    <option> OPTIMIZATION </option>
+                    <option>FROZEN INTERFACE </option>
+                    <option>BAD ONU </option>
+                    <option>POWER OUTAGE </option>
+                    <option>HIGH LOSS</option>
 
                 </select>
 
